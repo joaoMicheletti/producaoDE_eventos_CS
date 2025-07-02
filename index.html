@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" cristatus="width=device-width, initial-scale=1.0">
+    <title>Cristatus - Cobertura Profissional de Eventos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #HOME {
+            background-image: url(./home.png);
+            background-position: center center;
+            background-repeat:  no-repeat;
+            background-size: cover;
+        }
+        .gold-text {
+            background: linear-gradient(to right, #33A9AB, #694988);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #6d00da 0%, #727880 100%);
+            color: #33A9AB;
+            font-size: 1.5rem;
+        }
+        .form-input {
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .form-input:focus {
+            border-color: #4299e1;
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        .btn_home{
+            background: linear-gradient(to right, #33A9AB, #694988);
+        }
+        .barra{
+            margin-top: 20px;
+            background: linear-gradient(135deg, #6d00da 0%, #727880 100%);
+        }
+        .borda {
+            border-color: #6d00da;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Hero Section -->
+    <header  id="HOME" class="text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <span class="gold-text">Transforme Seu Evento</span> em Conteúdo Estratégico e Memorável
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 text-gray-200 max-w-3xl mx-auto">
+                    Aumente sua visibilidade, fortaleça sua marca e registre os melhores momentos com nossa cobertura completa de eventos corporativos.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#formulario" class="btn_home text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg pulse-animation">
+                        Quero uma Cobertura Profissional
+                    </a>
+                    <a href="#servicos" class="bg-transparent hover:bg-white hover:bg-opacity-10 text-white font-bold py-4 px-8 rounded-full text-lg border-2 border-white transition-all duration-300 transform hover:scale-105">
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
+    </header>
+
+    <!-- Why Section -->
+    <section class="py-16 md:py-24 bg-gray-50" id="porque">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="video-container rounded-xl overflow-hidden shadow-2xl">
+                        <video width="640" height="360" controls>
+                            <source src="_01.mp4" type="video/mp4">
+                            Seu navegador não suporta a tag de vídeo HTML5.
+                        </video>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                        Por Que Registrar o Seu Evento com a <span class="gold-text ">Cristatus</span>?
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Todo evento é uma oportunidade de ouro para gerar autoridade, criar conteúdos que vendem, fortalecer seu networking e eternizar os melhores momentos da sua empresa.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        A nossa cobertura vai muito além de fotos e vídeos. Ela é pensada estrategicamente para transformar o que acontece no palco e nos bastidores em conteúdo que conecta e engaja o seu público.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="btn_home text-white px-4 py-2 rounded-full text-sm font-medium">+ Autoridade</span>
+                        <span class="btn_home text-white px-4 py-2 rounded-full text-sm font-medium">+ Networking</span>
+                        <span class="btn_home text-white px-4 py-2 rounded-full text-sm font-medium">+ Visibilidade</span>
+                        <span class="btn_home text-white px-4 py-2 rounded-full text-sm font-medium">Conteúdo Estratégico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 md:py-24 bg-white" id="servicos">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                    O Que Inclui a Nossa <span class="gold-text">Cobertura de Evento?</span>
+                </h2>
+                <div class=" w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Um serviço completo que vai desde o planejamento até a entrega do material finalizado.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Briefing Personalizado</h3>
+                    <p class="text-gray-600">
+                        Reunião de alinhamento antes do evento para entender seus objetivos e expectativas.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Visita Técnica</h3>
+                    <p class="text-gray-600">
+                        Quando necessário, fazemos uma visita ao local para planejar os melhores ângulos e captações.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Planejamento Estratégico</h3>
+                    <p class="text-gray-600">
+                        Definimos os melhores ângulos, roteiros de captação e tomadas chave para seu evento.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Fotos Profissionais</h3>
+                    <p class="text-gray-600">
+                        Captação de fotos de palestrantes, público, emoções e bastidores com equipamento profissional.
+                    </p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Vídeos Profissionais</h3>
+                    <p class="text-gray-600">
+                        Gravação de takes, teasers, depoimentos e expectativas com equipamento de alta qualidade.
+                    </p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Storymaker ao Vivo</h3>
+                    <p class="text-gray-600">
+                        Cobertura em tempo real para Stories durante o evento, engajando seu público imediatamente.
+                    </p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Entrevistas</h3>
+                    <p class="text-gray-600">
+                        Realização de entrevistas com participantes e organizadores para conteúdo adicional.
+                    </p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Edição de Fotos</h3>
+                    <p class="text-gray-600">
+                        Tratamento profissional com Brandcolor e LUT personalizado, entregue em PNG e JPEG.
+                    </p>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover-scale transition-all duration-300 border border-gray-200">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Edição de Vídeos</h3>
+                    <p class="text-gray-600">
+                        Até 20 vídeos otimizados para Instagram com trilha sonora, legendas, efeitos e transições.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="barra rounded-xl p-8 text-white">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">Entrega Rápida e Segura</h3>
+                        <p class="text-blue-100">
+                            Todo o material é entregue via Drive ou WeTransfer em até 15 dias úteis após o evento.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="#formulario" class="btn_home text-white font-bold py-3 px-6 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-gray-50" id="depoimentos">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                    O Que Nossos <span class="gold-text">Clientes Dizem?</span>
+                </h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Veja como transformamos eventos em conteúdo estratégico para nossos clientes.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            JF
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">João Fernandes</h4>
+                            <p class="text-gray-500 text-sm">CEO na Empresa X</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "A cobertura feita pela equipe Cristatus foi essencial para o sucesso da nossa convenção. Não foi só uma gravação… foi uma entrega estratégica de conteúdo que já está nos trazendo novos negócios."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ana Mendes</h4>
+                            <p class="text-gray-500 text-sm">Diretora de Marketing</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "Contratamos a Cristatus para cobrir nosso evento anual e ficamos impressionados com a qualidade do material e a visão estratégica. As fotos e vídeos geraram engajamento recorde em nossas redes sociais."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl testimonial-card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center text-white font-bold text-xl mr-4">
+                            RC
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ricardo Castro</h4>
+                            <p class="text-gray-500 text-sm">Organizador de Eventos</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "O diferencial da Cristatus  está na capacidade de entender o que o cliente precisa e entregar além das expectativas. O vídeo day que produziram foi exibido no telão no encerramento e emocionou todos os participantes."
+                    </p>
+                    <div class="flex text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#formulario" class="btn_home text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Quero Resultados Assim Para Meu Evento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 md:py-24 bg-white" id="investimento">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                    Quanto <span class="gold-text">Custa?</span>
+                </h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Um investimento que se transforma em conteúdo estratégico para sua marca.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="barra rounded-xl overflow-hidden shadow-2xl">
+                    <div class="p-8 md:p-12 text-white">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                            <div>
+                                <h3 class="text-2xl md:text-3xl font-bold mb-2">Pacote Completo de Cobertura</h3>
+                                <p class="text-blue-100 mb-4">
+                                    Tudo o que você precisa para transformar seu evento em conteúdo de alto impacto.
+                                </p>
+                                <div class="flex items-center">
+                                    <span class="text-4xl font-bold">R$ 4.299,99</span>
+                                    <span class="ml-4 px-3 py-1 bg-yellow-500 text-blue-900 rounded-full text-sm font-bold">CONDIÇÃO ESPECIAL</span>
+                                </div>
+                                
+                            </div>
+                            <div class="flex-shrink-0">
+                                <div class="bg-white bg-opacity-10 p-6 rounded-lg border border-white border-opacity-20 text-center">
+                                    <div class="text-2xl font-bold mb-2">Condição de Pagamento</div>
+                                    <div class="text-lg">
+                                        <div class="mb-2">✅ 50% no ato da contratação </div>
+                                        <div>✅ 50% na entrega final</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="borda mt-8 bg-yellow-50 border  rounded-xl p-6">
+                    <div class="flex flex-col md:flex-row items-center gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center text-white text-2xl">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Bônus Exclusivo</h4>
+                            <p class="text-gray-700">
+                                <span class="font-bold">🎥 Vídeo Day:</span> Um review geral de tudo o que aconteceu no evento, editado e pronto para ser exibido no telão ou publicado nas redes sociais. Perfeito para engajar seu público após o evento!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#formulario" class="btn_home   text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg pulse-animation">
+                        Quero Aproveitar Esta Oferta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-16 md:py-24 bg-gray-50" id="formulario">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                    <div class="md:flex">
+                        <div class="barra md:w-1/2  text-white p-8 md:p-12">
+                            <h2 class="text-3xl font-bold mb-6">Solicite um Orçamento Personalizado</h2>
+                            <p class="mb-6 text-blue-100">
+                                Preencha o formulário ao lado e nossa equipe entrará em contato para entender suas necessidades e preparar uma proposta exclusiva para seu evento.
+                            </p>
+                            <div class="mb-6">
+                                <h3 class="text-xl font-bold mb-3">Informações de Contato</h3>
+                                <p class="text-blue-100">
+                                    <i class="fas fa-phone-alt mr-2"></i> +55 11 91975-0542<br>
+                                    <i class="fas fa-envelope mr-2"></i> contato@cristatus.com.br
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-3">Redes Sociais</h3>
+                                <div class="flex gap-4">
+                                    <a href="https://www.instagram.com/cristatus.oficial/" class="w-10 h-10 rounded-full flex items-center justify-center text-white text-lg transition-all duration-300 transform hover:scale-110">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <h3 class="text-2xl font-bold gol mb-6">Para o Seu Evento</h3>
+                            <form id="eventForm" class="space-y-4">
+                                <div>
+                                    <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome completo*</label>
+                                    <input type="text" id="nome" name="nome" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="empresa" class="block text-sm font-medium text-gray-700 mb-1">Nome da empresa*</label>
+                                    <input type="text" id="empresa" name="empresa" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="whatsapp" class="block text-sm font-medium text-gray-700 mb-1">WhatsApp*</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="(DDD) 9XXXX-XXXX">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-mail*</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="data" class="block text-sm font-medium text-gray-700 mb-1">Data do evento*</label>
+                                    <input type="date" id="data" name="data" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label for="tipo" class="block text-sm font-medium text-gray-700 mb-1">Tipo de evento*</label>
+                                    <select id="tipo" name="tipo" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        <option value="">Selecione...</option>
+                                        <option value="palestra">Palestra</option>
+                                        <option value="convencao">Convenção</option>
+                                        <option value="workshop">Workshop</option>
+                                        <option value="seminario">Seminário</option>
+                                        <option value="treinamento">Treinamento</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="objetivo" class="block text-sm font-medium text-gray-700 mb-1">Qual o seu objetivo com a cobertura?*</label>
+                                    <select id="objetivo" name="objetivo" required class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        <option value="">Selecione...</option>
+                                        <option value="autoridade">Gerar autoridade</option>
+                                        <option value="leads">Captar leads</option>
+                                        <option value="registro">Registro institucional</option>
+                                        <option value="marketing">Conteúdo para marketing</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="mensagem" class="block text-sm font-medium text-gray-700 mb-1">Mensagem adicional</label>
+                                    <textarea id="mensagem" name="mensagem" rows="3" class="w-full px-4 py-3 rounded-lg form-input focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                </div>
+                                <div class="pt-2">
+                                    <button type="submit" class="btn_home text-white font-bold py-4 px-6 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                        Enviar Solicitação
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                    Perguntas <span class="gold-text">Frequentes</span>
+                </h2>
+                <div class="w-24 h-1 bg-yellow-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="text-lg font-medium text-gray-900">Qual é o prazo mínimo para contratar o serviço?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-2">
+                        <p class="text-gray-600">
+                            Recomendamos um prazo mínimo de 15 dias antes do evento para podermos realizar todo o planejamento estratégico adequado. No entanto, em casos de urgência, podemos avaliar possibilidades com menos antecedência.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="text-lg font-medium text-gray-900">Vocês trabalham em todo o Brasil?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-2">
+                        <p class="text-gray-600">
+                            Sim, atendemos em todo o território nacional. Para eventos fora de São Paulo, cobramos adicional para deslocamento e hospedagem da equipe, quando necessário.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="text-lg font-medium text-gray-900">Quantas pessoas compõem a equipe de cobertura?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-2">
+                        <p class="text-gray-600">
+                            Nossa equipe padrão é composta por 2 profissionais: um fotógrafo e um videomaker. Para eventos maiores ou com necessidades específicas, podemos aumentar o time conforme necessário.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="text-lg font-medium text-gray-900">Posso solicitar alterações no material após a entrega?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-2">
+                        <p class="text-gray-600">
+                            Incluímos até 2 revisões no pacote padrão. Alterações adicionais podem ser contratadas como serviço extra, com valor calculado conforme a complexidade das mudanças solicitadas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="text-lg font-medium text-gray-900">Como funciona o bônus Vídeo Day?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 pt-2">
+                        <p class="text-gray-600">
+                            O Vídeo Day é um resumo em vídeo de até 3 minutos com os melhores momentos do evento, editado com trilha sonora, efeitos e transições, perfeito para compartilhar nas redes sociais ou exibir em telões durante o próprio evento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-600 mb-6">
+                    Ainda tem dúvidas? Entre em contato conosco!
+                </p>
+                <a href="#formulario" class="btn_home text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Cristatus</h3>
+                    <p class="text-gray-400">
+                        Conectando histórias, empresas e oportunidades através de experiências inesquecíveis.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Serviços</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cobertura de Eventos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fotografia Profissional</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Vídeos Corporativos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Conteúdo para Redes Sociais</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#porque" class="text-gray-400 hover:text-white transition-colors">Por Que Contratar</a></li>
+                        <li><a href="#servicos" class="text-gray-400 hover:text-white transition-colors">Nossos Serviços</a></li>
+                        <li><a href="#depoimentos" class="text-gray-400 hover:text-white transition-colors">Depoimentos</a></li>
+                        <li><a href="#investimento" class="text-gray-400 hover:text-white transition-colors">Investimento</a></li>
+                        <li><a href="#formulario" class="text-gray-400 hover:text-white transition-colors">Orçamento</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+55 11 91975-0542</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">contato@Cristatus.com.br</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">São Paulo - SP</span>
+                        </li>
+                    </ul>
+                    <div class="flex gap-4 mt-4">
+                        <a href="https://www.instagram.com/cristatus.oficial/" class="w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center text-white text-lg transition-all duration-300 transform hover:scale-110">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        © 2023 Cristatus. Todos os direitos reservados.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Termos de Serviço</a>
+                        <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511919750542" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white text-2xl shadow-xl transition-all duration-300 transform hover:scale-110 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-toggle').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherIcon = otherButton.querySelector('i');
+                        
+                        otherContent.classList.add('hidden');
+                        otherIcon.classList.remove('fa-chevron-up');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+        // Form Submission to WhatsApp
+        document.getElementById('eventForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value;
+            const empresa = document.getElementById('empresa').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const email = document.getElementById('email').value;
+            const data = document.getElementById('data').value;
+            const tipo = document.getElementById('tipo').value;
+            const objetivo = document.getElementById('objetivo').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            const formattedDate = new Date(data).toLocaleDateString('pt-BR');
+            
+            const whatsappMessage = `Nova solicitação de orçamento - Cobertura de Cristatus  Connect:\n\nNome: ${nome}\nEmpresa: ${empresa}\nWhatsApp: ${whatsapp}\nEmail: ${email}\nData do Evento: ${formattedDate}\nTipo de Evento: ${tipo}\nObjetivo da Cobertura: ${objetivo}\nMensagem Adicional: ${mensagem}`;
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/5511919750542?text=${encodedMessage}`, '_blank');
+            
+            // Optional: Show success message
+            alert('Obrigado pelo seu interesse! Você será redirecionado para o WhatsApp para finalizar sua solicitação.');
+            
+            // Optional: Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.hover-scale, .testimonial-card, .feature-icon');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Set initial state for animated elements
+        document.querySelectorAll('.hover-scale, .testimonial-card, .feature-icon').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+
+        // Run animation check on scroll and load
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
